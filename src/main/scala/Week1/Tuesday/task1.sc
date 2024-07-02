@@ -4,24 +4,31 @@
 // 1
 // false because maths
 val a: Boolean = 3 + 4 * 57 < 300
+
 // false because 144 / 12 == 12
 val b: Boolean = 144 / 12 > 12 | 144 / 12 == 5
+
 // true as c becomes before d in alphabet
 val c: Boolean = "Cat" < "Dog"
+
 // false because r comes after h
 val d: Boolean = "Rabbit" < "Hamster"
+
 // true because remainder 1 means not divisible by 2
 val e: Boolean = 17 % 2 == 1
+
 // true because all expressions are true
 val f: Boolean = 75 / 9 < 30 && 89 / 6 < 20
 
 // 2
-// the string "I love scala already" is essentially a value, whereas println is a function which takes a string value as an input and outputs it
+// the string "I love scala already" is a value, whereas println is a function which takes the string value as an input and outputs it
 
 // 3
 // I find the type for longs a little strange as they do not follow the general pattern, need the L at end
 val long1: Long = 999999999999999999L
+
 // Everything else is similar to what I have learnt previously
+
 
 // ################
 // Extension
@@ -47,6 +54,8 @@ val myUpperCaseString: String = myString.toUpperCase()
 println(s"Lower case string: $myString \nUpper case string: $myUpperCaseString")
 
 val firstLetter: String = myString.capitalize
+
+
 // ################
 // Research
 //val new: String = "Error"
