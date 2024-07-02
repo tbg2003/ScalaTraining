@@ -2,7 +2,7 @@
 
 ## Learning the basics of scala
 
-[This is the link text](#Week1)
+[Week 1](#Week-1)
 
 
 
