@@ -8,7 +8,10 @@
 
 ## Week 1
 #### Tuesday
-We covered: 
 - Values & variables 
 - Types
 - Operators 
+
+#### Wednesday 
+- String interpolation 
+- Conditional if/else
