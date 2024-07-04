@@ -1,7 +1,8 @@
 # ScalaTraining
-
 ## Learning the basics of scala
 
+
+#### Table of Contents
 [Week 1](#Week-1)
 
 
@@ -9,6 +10,8 @@
 ## Week 1
 | Day       | Content Covered                                 |                                               
 |-----------|-------------------------------------------------|
-| Monday    | - Values & Variables<br>- Types<br>- Operators  |
-| Tuesday   | - String Interpolation<br>- Conditional if/else | 
-| Wednesday | - Collections & Methods<br>- Arrays             |   
+| Tuesday   | - Values & Variables<br>- Types<br>- Operators  |
+| Wednesday | - String Interpolation<br>- Conditional if/else | 
+| Thursday  | - Collections & Methods<br>- Arrays             |
+| Friday    |                                                 | 
+    
