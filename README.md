@@ -15,3 +15,7 @@
 #### Wednesday 
 - String interpolation 
 - Conditional if/else
+
+#### Thursday 
+- Collections & Methods
+- Arrays

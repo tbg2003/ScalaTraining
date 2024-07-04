@@ -2,7 +2,7 @@
 // MVP
 
 //1
-val numOfWatermelons: Int = 5
+val numOfWatermelons: Int = 0
 //2
 if (numOfWatermelons > 5){
   println("Not possible to carry even with a bag")
@@ -18,7 +18,8 @@ if (numOfWatermelons > 5){
 // S type interpolation is most appropriate here, you are dealing with integers so no need for advanced formatting
 
 //4
-val hasBag: Boolean = true
+val hasBag: Boolean = false
+
 
 //5
 if(hasBag && numOfWatermelons <= 5 && numOfWatermelons >= 0){
@@ -46,7 +47,7 @@ println(f"Total price of watermelons is £${numOfWatermelons * conversionRate}%.
 // Extension
 
 //1
-
+// Not -> And -> Or
 //2
 if((true||false&&false))println("True") else println("False")
 //3
