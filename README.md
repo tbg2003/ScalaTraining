@@ -8,10 +8,10 @@
 
 
 ## Week 1
-| Day       | Content Covered                                 |                                               
-|-----------|-------------------------------------------------|
-| Tuesday   | - Values & Variables<br>- Types<br>- Operators  |
-| Wednesday | - String Interpolation<br>- Conditional if/else | 
-| Thursday  | - Collections & Methods<br>- Arrays             |
-| Friday    |                                                 | 
+| Day       | Content Covered                             |                                               
+|-----------|---------------------------------------------|
+| Tuesday   | - Values & Variables, Types, Operators      |
+| Wednesday | - String Interpolation, Conditional if/else | 
+| Thursday  | - Collections & Methods, Arrays             |
+| Friday    | - Classes, Objects, Inheritance & Traits    | 
     

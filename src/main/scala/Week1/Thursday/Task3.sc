@@ -4,26 +4,40 @@
 
 //1
 val numList: List[Int] = (1 to 9).toList
+
 val colourSeq: Seq[String] = Seq("Red", "Yellow", "Blue")
+
 val multiplyNums: List[Int] = numList.map(_*3)
+
 val filteredColours: Seq[String] = colourSeq.filterNot(_=="Blue")
+
 val containOrgange: Boolean = colourSeq.contains("Orange")
 
 val isOdd: Seq[Boolean] = numList.flatMap(n=>
   if (n%2 == 1) Seq(true)
   else Seq(false)
 )
+val isOdd2: Seq[Boolean] = numList.map{
+  _%2 != 0
+}
+
+// Method works however what is dog dies? or get a new dog?
+// Better to just create a long map for all pets - with the name as a key as they need to be unique
+val dogNames: List[String] = List("Charlie", "Buster")
+val dodoNames: List[String] = List("Henry")
+val goblinSharkNames: List[String] = List("Penelope")
 
 val pets: Map[String, List[String]] = Map(
-  "dog" -> List("Charlie", "Buster"),
-  "dodo" -> List("Henry"),
-  "goblin shark" -> List("Penelope")
+  "dog" -> dogNames,
+  "dodo" -> dodoNames,
+  "goblin shark" -> goblinSharkNames
 )
 
 
-// Only works for one
+// Overly complex
 val petNames: List[String] = pets.filter{_._1 == "dog"}.flatMap(_._2).toList
-
+// Simple
+val dogNames: List[String] = pets{"dog"}
 
 // ##################
 // # Extension
