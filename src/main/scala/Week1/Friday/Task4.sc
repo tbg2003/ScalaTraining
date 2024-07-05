@@ -1,12 +1,13 @@
 // ###################################
-// #              MVP                #
+// #       MVP & Extension           #
 // ###################################
 
+// sealed trait
+// compiler knows every possible subtypes and can reason about it
 sealed trait DietType
-  case object Herbivore extends DietType
-  case object Carnivore extends DietType
-  case object Omnivore extends DietType
-
+case object Herbivore extends DietType
+case object Carnivore extends DietType
+case object Omnivore extends DietType
 
 trait Species{
   val speciesName:String
@@ -121,3 +122,65 @@ val myDog = new Dog(
 Sanctuary.add_animal(myDog)
 Sanctuary.add_animal(warthog1)
 Sanctuary.animals
+
+// ###################################
+// #            Research             #
+// ###################################
+
+/** Difference Between abstract class and a trait? */
+/*
+* Abstract classes cannot be instantiated directly
+* They can have members with and without implementation
+* Used to define a common base type with some shared implementation and some
+* methods that must be defined by subclasses
+* Similar to traits, but traits are more flexible and DO NOT take constructor parameters
+*
+* USE CASES:
+*
+*  - Normal Class -
+* When you have a concrete implementation you want to instantiate directly & use
+*
+*  - Abstract Class -
+* When you need to define a common base type with some shared implementation and some
+* abstract methods that must be implemented by subclasses
+* Good for when you have a hierarchy
+*
+*  - Traits -
+* When you need to define reusable behaviour that can be mixed into different classes
+* Great for defining behaviours that can be shared across unrelated domains
+*
+* */
+
+/** What are companion classes and objects? Why might you use them?*/
+/*
+* A companion object is an object which shares the same name with a class
+* within the same file
+*
+* It can:
+*  - Hold specific static-like members that are shared across all instances of the class
+*  - Access both private methods and private fields of the class.
+*
+* A companion class is a normal class however:
+*     It can hold instance-specific data and behaviour
+*
+* USE CASES:
+*
+*  - Companion Objects -
+*
+* Use to define FACTORY METHODS that create instances if the companion class
+* Makes the instantiation process more readable and provide
+* additional logic during object creation
+*
+* Use to hold STATIC-LIKE MEMBERS that do not belong to a specific
+* instance but are related to the class as a whole
+* Allows you to group together related functionality and access it without needing
+* and instance of the class - similar to static methods
+*
+*
+* ENCAPSULATION and ACCESS CONTROL
+* Use companion Objects when you need to access private members of the companion class
+* As they can access private members, useful to manipulate internal state of class
+* Maintains encapsulation while allowing complex interactions within class-object pair
+*
+* */
+
