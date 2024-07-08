@@ -1,3 +1,12 @@
+/**  ---- Code Evaluation ---- */
+/*
+Make abstract classes without () and use {} instead
+this will prevent you from having to list all of the parameters over and over
+-- CASE CLASSES -- "pimped up classes"
+ */
+
+
+
 // ###################################
 // #       MVP & Extension           #
 // ###################################
@@ -8,6 +17,7 @@ sealed trait DietType
 case object Herbivore extends DietType
 case object Carnivore extends DietType
 case object Omnivore extends DietType
+
 
 trait Species{
   val speciesName:String
@@ -35,11 +45,11 @@ class Bird(name:String, age:Int, diet:DietType, val beakLength:Double, val feath
 class Insect(name:String, age:Int, diet:DietType, val numOfLimbs:Int) extends Animal(name, age, diet)
 
 
-class Warthog(name:String, 
+class Warthog(name:String,
               age:Int,
               diet:DietType,
-              furColour:String, 
-              hasTail:Boolean, 
+              furColour:String,
+              hasTail:Boolean,
               val hasTusks:Boolean, 
               val speciesName:String, 
               val conservationStatus: String, 
