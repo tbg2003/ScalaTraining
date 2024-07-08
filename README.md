@@ -4,7 +4,7 @@
 
 #### Table of Contents
 [Week 1](#Week-1)
-
+[Week 2](#Week-2)
 
 
 ## Week 1
@@ -14,4 +14,14 @@
 | Wednesday | - String Interpolation, Conditional if/else                 | 
 | Thursday  | - Collections & Methods, Arrays                             |
 | Friday    | - Classes, Objects, Inheritance & Traits  + Optional values | 
+
+
+## Week 2
+| Day       | Content Covered |                                               
+|-----------|-----------------|
+| Monday    | -               |
+| Tuesday   | -               |
+| Wednesday | -               | 
+| Thursday  | -               |
+| Friday    | -               | 
     
