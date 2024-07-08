@@ -17,11 +17,11 @@
 
 
 ## Week 2
-| Day       | Content Covered |                                               
-|-----------|-----------------|
-| Monday    | -               |
-| Tuesday   | -               |
-| Wednesday | -               | 
-| Thursday  | -               |
-| Friday    | -               | 
+| Day       | Content Covered         |                                               
+|-----------|-------------------------|
+| Monday    | - Functions and Methods |
+| Tuesday   | -                       |
+| Wednesday | -                       | 
+| Thursday  | -                       |
+| Friday    | -                       | 
     
