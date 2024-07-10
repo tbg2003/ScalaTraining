@@ -30,6 +30,7 @@ trait Species{
 trait Flyable{
   val canFly:Boolean
   val wingspan:Double
+  def tryToFly():String
 }
 
 
@@ -77,6 +78,7 @@ class Owl(val speciesName:String,
           val canFly: Boolean, 
           val wingspan:Double) 
   extends Bird with Species with Flyable {
+  override def tryToFly(): String = "Silently Gliding"
   override val beakLength: Double = 5.2
   override val featherColour: String = "white"
   override val name: String = "Barny"
@@ -93,6 +95,7 @@ class Dragonfly(val wingPairs: Int,
                 val canFly: Boolean, 
                 val wingspan:Double) 
   extends Insect with Species with Flyable {
+  override def tryToFly(): String = "Buzzing away"
   override val numOfLimbs: Int = 6
   override val name: String = "Drago"
   override val age: Int = 1
