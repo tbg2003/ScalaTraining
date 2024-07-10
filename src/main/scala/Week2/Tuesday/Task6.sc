@@ -3,8 +3,8 @@
 // ##############################################################
 
 /** --- Question 1 --- */
-// Main difference between a class and case class is that case classes are used to model immutable data and come equipped
-// with predefined methods
+// Main difference between a class and case class is that case classes are used to model immutable data
+// and come equipped with predefined methods
 
 /** --- Question 2 --- */
 // a) case class Person(name:String, age:Int, nationality:String, isStudent:Boolean)
@@ -30,7 +30,7 @@
 
 /** --- Question 3 --- */
 // after using the == operator the vals which return true are
-// chocolateMuffin == anotherChocolateMuffin == oneMoreChocolateMuffin
+// chocolateMuffin == anotherChocolateMuffin
 
 
 // ##############################################################
@@ -47,6 +47,7 @@ case object Philosophy extends Subject
 
 
 /** --- Question 2 --- */
+
 val student1:Student = Student(name = "Tom", yearOfStudy = 3, isBroke = true)
 val student2:Student = Student(name = "Alex", yearOfStudy = 1, isBroke = false)
 val student3:Student = Student(name = "Jon", yearOfStudy = 2, isBroke = true)
@@ -84,6 +85,7 @@ student1.equals(student1Copy)
 student1.eq(student1Copy) // doesn't point to same place in memory so .eq is false
 
 student1.hashCode()
+student1.##
 student2.hashCode()
 student1.hashCode().equals(student2.copy(name = "Tom", yearOfStudy = 3, isBroke = true).hashCode())
 
@@ -101,9 +103,9 @@ student1.productIterator.toList
 // Only difference I found is the error which occurs from null
 
 // ==
-student1 == null
-null == student1
+student1 == null // = false
+null == student1 // = false
 
 // .equals
-student1.equals(null)
-null.equals(student1) // Cannot handle this well -> NullPointerException
+student1.equals(null) // = false
+null.equals(student1) // = Error, cannot handle this well ->  NullPointerException
