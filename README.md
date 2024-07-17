@@ -5,6 +5,7 @@
 #### Table of Contents
 - [Week 1](#Week-1)
 - [Week 2](#Week-2)
+- [Week 2](#week-3)
 
 
 ## Week 1
@@ -22,6 +23,15 @@
 | Monday    | - Functions and Methods                                       |
 | Tuesday   | - Classes Cheat Sheet, Case Classes                           |
 | Wednesday | - Test Driven Development (FlatSpec Library), GitHub Branches | 
-| Thursday  | -                                                             |
-| Friday    | -                                                             | 
-    
+| Thursday  | - Income Tax Calculator Project                               |
+| Friday    | - GuessWho Project                                            | 
+
+
+## Week 3
+| Day       | Content Covered                               |                                               
+|-----------|-----------------------------------------------|
+| Monday    | GuessWho Project                              |
+| Tuesday   | GuessWho Project & Project Demo               |
+| Wednesday | Pattern Matching, Enums, Options, get-or-else | 
+| Thursday  |                                               |
+| Friday    |                                               | 
