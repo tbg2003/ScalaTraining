@@ -1,8 +1,8 @@
 package Week2.Wednesday
 
-import org.scalatest.FlatSpec
+import org.scalatest.flatspec.AnyFlatSpec
 
-class TwoNumbersSpec extends FlatSpec {
+class TwoNumbersSpec extends AnyFlatSpec {
   val sameXAndY = new TwoNumbers(x = 3, y = 3)
   val bigXSmallY = new TwoNumbers(x = 3, y = 1)
   val smallXBigY = new TwoNumbers(x = 1, y = 3)

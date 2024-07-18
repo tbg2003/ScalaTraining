@@ -1,8 +1,8 @@
 package Week2.Wednesday
 
-import org.scalatest.FlatSpec
+import org.scalatest.flatspec.AnyFlatSpec
 
-class FizzBuzzSec extends FlatSpec {
+class FizzBuzzSpec extends AnyFlatSpec {
   val divByThree = new FizzBuzz(x = 6)
   val divByFive = new FizzBuzz(x = 10)
   val divByThreeFive = new FizzBuzz(x = 15)

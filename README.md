@@ -33,5 +33,5 @@
 | Monday    | GuessWho Project                              |
 | Tuesday   | GuessWho Project & Project Demo               |
 | Wednesday | Pattern Matching, Enums, Options, get-or-else | 
-| Thursday  |                                               |
+| Thursday  | Eithers and For Comprehensions                |
 | Friday    |                                               | 
