@@ -1,7 +1,5 @@
 package Week3.Thursday
 
-import scala.util.matching.Regex
-
 object AfternoonTask extends App{
 
 
