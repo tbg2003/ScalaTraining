@@ -32,6 +32,8 @@ case object Libra extends StarSign
 case object Scorpio extends StarSign
 case object Sagittarius extends StarSign
 
+// Make companion object for StarSign, best practise
+
 case class Person(
                    fullName: String,
                    dateOfBirth: LocalDate,
@@ -69,13 +71,19 @@ object PersonFactory{
 
   def calculateAge(dateOfBirth:LocalDate, dateOfDeath:Option[LocalDate]):Int = {
     val dateEnd: LocalDate = dateOfDeath.getOrElse(LocalDate.now())
+//    ANOTHER BUILT IN METHOD : ChronoUnit.YEARS.between().toInt
     val age:Int = Period.between(dateOfBirth, dateEnd).getYears
     age
   }
-
+// Move this to StarSign Companion Class
   def calculateStarSign(dateOfBirth:LocalDate):StarSign = {
     val month:Int = dateOfBirth.getMonthValue
     val day:Int = dateOfBirth.getDayOfMonth
+
+    /** Month Value ranges from:
+     * 1 -> January
+     * 12 -> December
+     * */
     (month, day) match {
       case(12, x) if x > 21 => Capricorn
       case (1, x) if x <= 20 => Capricorn
@@ -152,8 +160,31 @@ val tom:Person = PersonFactory.createPerson(
   occupation = Some("Full Stack Developer"),
   dateOfDeath = None)
 
+val grandad:Person = PersonFactory.createPerson(
+  fullName = "Grandad John",
+  dateOfBirth = LocalDate.of(1924,2,29),
+  lastCountryLivedIn = "England",
+  occupation = None,
+  dateOfDeath = Some(LocalDate.of(2024,5,18)))
+
 tom.age
 PersonFactory.horoscope(tom.dateOfBirth)
+
+grandad.age
+grandad.ageAtDeath
+PersonFactory.horoscope(grandad.dateOfBirth)
+
+//val invalid:Person = PersonFactory.createPerson(
+//  fullName = "Invalid McError",
+//  dateOfBirth = LocalDate.of(1924,8,32),
+//  lastCountryLivedIn = "England",
+//  occupation = None,
+//  dateOfDeath = None//Some(LocalDate.of(2005,8,45))
+//)
+
+//invalid.age
+//invalid.starSign
+//invalid.ageAtDeath
 
 
 // Question 4
@@ -244,15 +275,24 @@ def getAnimalFact(animal:Animal):String = {
 
 val blackRhino:Rhino = Rhino(name = "rhino", age = 4, speciesName = "black rhino")
 val otherRhino:Rhino = Rhino(name = "rhino2", age = 4, speciesName = "White rhino")
-val orangutan:Monkey = Monkey(name = "monkey", age = 4, speciesName = "Orangutan")
+val monkey:Monkey = Monkey(name = "monkey", age = 4, speciesName = "Orangutan")
+val monkey2:Monkey = Monkey(name = "monkey2", age = 4, speciesName = "Ape")
 val turtle:Turtle = Turtle(name = "turtle", age = 4, speciesName = "Hawksbill turtle")
+val turtle2:Turtle = Turtle(name = "turtle2", age = 4, speciesName = "Average turtle")
 val tiger:Tiger = Tiger(name = "tiger", age = 4, speciesName = "Sunda Tiger")
+val tiger2:Tiger = Tiger(name = "tiger2", age = 4, speciesName = "A not endangered Tiger")
 
 getAnimalFact(blackRhino)
 getAnimalFact(otherRhino)
-getAnimalFact(orangutan)
+
+getAnimalFact(monkey)
+getAnimalFact(monkey2)
+
 getAnimalFact(turtle)
+getAnimalFact(turtle2)
+
 getAnimalFact(tiger)
+getAnimalFact(tiger2)
 
 // ##############################################################
 // #                          Research                          #
