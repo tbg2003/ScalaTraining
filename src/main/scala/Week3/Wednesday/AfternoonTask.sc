@@ -72,6 +72,7 @@ object PersonFactory{
     val age:Int = Period.between(dateOfBirth, dateEnd).getYears
     age
   }
+
   def calculateStarSign(dateOfBirth:LocalDate):StarSign = {
     val month:Int = dateOfBirth.getMonthValue
     val day:Int = dateOfBirth.getDayOfMonth
@@ -100,17 +101,17 @@ object PersonFactory{
       case(7, x) if x > 22 => Leo
       case(8, x) if x <= 23 => Leo
 
-      case(1, x) if x > 23 => Virgo
-      case(2, x) if x <= 23 => Virgo
+      case(8, x) if x > 23 => Virgo
+      case(9, x) if x <= 23 => Virgo
 
-      case(1, x) if x > 23 => Libra
-      case(2, x) if x <= 23 => Libra
+      case(9, x) if x > 23 => Libra
+      case(10, x) if x <= 23 => Libra
 
-      case(1, x) if x > 23 => Scorpio
-      case(2, x) if x <= 22 => Scorpio
+      case(10, x) if x > 23 => Scorpio
+      case(11, x) if x <= 22 => Scorpio
 
-      case(1, x) if x > 22 => Sagittarius
-      case(2, x) if x <= 21 => Sagittarius
+      case(11, x) if x > 22 => Sagittarius
+      case(12, x) if x <= 21 => Sagittarius
     }
   }
   
@@ -141,9 +142,8 @@ object PersonFactory{
       starSign = starSign)
     newPerson
   }
-
-
 }
+
 
 val tom:Person = PersonFactory.createPerson(
   fullName = "Tom Burt-Gray",
@@ -200,20 +200,27 @@ def isEndangered(species:String):Boolean= {
   if (cleanedEndangeredSpeciesList.contains(species.strip().toLowerCase())) true else false
 }
 
+def concernMessage(speciesName:String):String = {
+  s"The $speciesName is endangered!!, GET UP AND HELP"
+}
+def noConcernMessage(speciesName:String):String = {
+  s"The $speciesName is not endangered, you can chill for now"
+}
+
 def getMammalFact(mammal: Mammal):String = {
 
   mammal match {
-    case Elephant(_, _, speciesName) if isEndangered(speciesName) => s"The $speciesName is endangered!!"
-    case Elephant(_, _, speciesName) => s"The $speciesName is not endangered"
+    case Elephant(_, _, speciesName) if isEndangered(speciesName) => concernMessage(speciesName)
+    case Elephant(_, _, speciesName) => noConcernMessage(speciesName)
 
-    case Monkey(_, _, speciesName) if isEndangered(speciesName) => s"The $speciesName is endangered!!"
-    case Monkey(_, _, speciesName) => s"The $speciesName is not endangered"
+    case Monkey(_, _, speciesName) if isEndangered(speciesName) => concernMessage(speciesName)
+    case Monkey(_, _, speciesName) => noConcernMessage(speciesName)
 
-    case Rhino(_, _, speciesName) if isEndangered(speciesName) => s"The $speciesName is endangered!!"
-    case Rhino(_, _, speciesName) => s"The $speciesName is not endangered"
+    case Rhino(_, _, speciesName) if isEndangered(speciesName) => concernMessage(speciesName)
+    case Rhino(_, _, speciesName) => noConcernMessage(speciesName)
 
-    case Tiger(_, _, speciesName) if isEndangered(speciesName) => s"The $speciesName is endangered!!"
-    case Tiger(_, _, speciesName) => s"The $speciesName is not endangered"
+    case Tiger(_, _, speciesName) if isEndangered(speciesName) =>concernMessage(speciesName)
+    case Tiger(_, _, speciesName) => noConcernMessage(speciesName)
 
     case _ => s"I don't know anything about $mammal"
   }
@@ -221,12 +228,11 @@ def getMammalFact(mammal: Mammal):String = {
 
 def getReptileFact(reptile: Reptile):String = {
   reptile match {
-    case Turtle(_, _, speciesName) if isEndangered(speciesName) => s"The $speciesName is endangered!!"
-    case Turtle(_, _, speciesName) => s"The $speciesName is not endangered"
+    case Turtle(_, _, speciesName) if isEndangered(speciesName) =>concernMessage(speciesName)
+    case Turtle(_, _, speciesName) => noConcernMessage(speciesName)
     case _ => s"No reptile fact about $reptile"
   }
 }
-
 
 def getAnimalFact(animal:Animal):String = {
   animal match {
@@ -247,3 +253,12 @@ getAnimalFact(otherRhino)
 getAnimalFact(orangutan)
 getAnimalFact(turtle)
 getAnimalFact(tiger)
+
+// ##############################################################
+// #                          Research                          #
+// ##############################################################
+/** --- WHy did code snippet not work? ---
+ * type lost during compilation,
+ *
+ *
+ * */
