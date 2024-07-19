@@ -3,6 +3,7 @@ package Week3.Thursday
 object Task extends App{
 
   case class MortgageRequest(priceOfProperty:Double, annualSalary:Double, deposit:Double, creditScore:Int)
+
   case object MortgageRequest{
     def creditScoreCheck(creditScore:Int):Either[String, Int] = {
       if (creditScore >= 550) Right(creditScore)
