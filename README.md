@@ -28,10 +28,10 @@
 
 
 ## Week 3
-| Day       | Content Covered                               |                                               
-|-----------|-----------------------------------------------|
-| Monday    | GuessWho Project                              |
-| Tuesday   | GuessWho Project & Project Demo               |
-| Wednesday | Pattern Matching, Enums, Options, get-or-else | 
-| Thursday  | Eithers and For Comprehensions                |
-| Friday    |                                               | 
+| Day       | Content Covered                                          |                                               
+|-----------|----------------------------------------------------------|
+| Monday    | GuessWho Project                                         |
+| Tuesday   | GuessWho Project & Project Demo                          |
+| Wednesday | Pattern Matching, Enums, Options, get-or-else            | 
+| Thursday  | Eithers and For Comprehensions                           |
+| Friday    | Futures , Extends Thursday's Afternoon Task With Futures | 
