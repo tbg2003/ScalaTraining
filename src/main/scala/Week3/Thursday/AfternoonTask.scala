@@ -65,7 +65,7 @@ object AfternoonTask extends App{
   case class InvalidPostcodeError(message:String) extends GenericPostageError
 
   val name:String = "Thomas"
-  val postcode:String = "CB23 1JE"
+  val postcode:String = "CB23"
   val eventualLetterOrError:Future[Either[GenericPostageError, Letter]] = Letter.fetchLetterOrError(name, postcode)
 
 //  Await.ready(eventualLetterOrError, 2.seconds)
@@ -98,6 +98,8 @@ object AfternoonTask extends App{
 
         case None => println("The Future did not complete")
       }
+    case Failure(exception) =>
+      println(s"Await timed out: $exception")
   }
 
 //
