@@ -40,7 +40,7 @@
 ## Week 4
 | Day       | Content Covered |                                               
 |-----------|-----------------|
-| Monday    |                 |
+| Monday    | Recursion       |
 | Tuesday   |                 |
 | Wednesday |                 | 
 | Thursday  |                 |
