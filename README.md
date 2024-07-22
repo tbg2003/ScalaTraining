@@ -5,8 +5,8 @@
 #### Table of Contents
 - [Week 1](#Week-1)
 - [Week 2](#Week-2)
-- [Week 3](#week-3)
-
+- [Week 3](#Week-3)
+- [Week 4](#Week-4)
 
 ## Week 1
 | Day       | Content Covered                                             |                                               
@@ -35,3 +35,13 @@
 | Wednesday | Pattern Matching, Enums, Options, get-or-else            | 
 | Thursday  | Eithers and For Comprehensions                           |
 | Friday    | Futures , Extends Thursday's Afternoon Task With Futures | 
+
+
+## Week 4
+| Day       | Content Covered |                                               
+|-----------|-----------------|
+| Monday    |                 |
+| Tuesday   |                 |
+| Wednesday |                 | 
+| Thursday  |                 |
+| Friday    |                 | 
