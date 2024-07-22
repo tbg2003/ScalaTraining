@@ -10,6 +10,8 @@ object AfternoonTask extends App{
 
 
   implicit val ec: ExecutionContext = ExecutionContext.global
+//  Don't include this as tests as tests should be very independent and separate to the rest of the code
+//   They should run the code in isolation and not interfere with anything global
 
 
   case class Name(value:String)
@@ -85,7 +87,7 @@ object AfternoonTask extends App{
 //  Trying to differentiate between incomplete valid and invalid
   val eventualLetterOrError2 = Try(Await.ready(eventualLetterOrError, 1.seconds))
   eventualLetterOrError2 match {
-    case Failure(exception) => println(s"Failed with exception 1: $exception") // Incomplete Invalid & Valid
+    case Failure(exception) => println(s"Failed with exception 1: $exception") // Incomplete Invalid & Valid --> No matter what you cant separate the invalid and valid if incomplete
     case Success(future) =>
       future.value match {
         case Some(Success(either)) =>
@@ -101,8 +103,6 @@ object AfternoonTask extends App{
     case Failure(exception) =>
       println(s"Await timed out: $exception")
   }
-
-//
 
 }
 
