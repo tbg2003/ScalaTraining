@@ -1,6 +1,6 @@
 package Week3.Friday
 
-import Week3.Friday.Futures.{addition, additionInTheFuture, fetchIsOddError}
+import Week3.Friday.Futures.{addition, additionInTheFuture, fetchIsOddOrError}
 import Week3.Thursday.Eithers.IsOddError
 import org.scalatest.concurrent.ScalaFutures
 import org.scalatest.matchers.should.Matchers
@@ -32,7 +32,7 @@ class FuturesSpec extends AnyWordSpec with Matchers with ScalaFutures{
     "return a Right" when{
       "Future succeeds and x is odd" in {
         val x:Int = 5
-        whenReady(fetchIsOddError(x)){
+        whenReady(fetchIsOddOrError(x)){
           result => result shouldEqual Right(s"$x is odd")
         }
       }
@@ -40,7 +40,7 @@ class FuturesSpec extends AnyWordSpec with Matchers with ScalaFutures{
     "return a Left" when{
       "Future succeeds and x is even" in {
         val x:Int = 6
-        whenReady(fetchIsOddError(x)){
+        whenReady(fetchIsOddOrError(x)){
           result => result shouldEqual Left(IsOddError)
         }
       }
@@ -48,7 +48,7 @@ class FuturesSpec extends AnyWordSpec with Matchers with ScalaFutures{
     "return an Exception" when{
       "Future Fails" in{
         val x:Int = 7
-        whenReady(fetchIsOddError(x)){
+        whenReady(fetchIsOddOrError(x)){
           result => result shouldEqual Left(IsOddError)
         }
       }
