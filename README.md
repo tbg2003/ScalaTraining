@@ -45,3 +45,24 @@
 | Wednesday |                 | 
 | Thursday  |                 |
 | Friday    |                 | 
+
+## Week 5
+| Day       | Content Covered    |                                               
+|-----------|--------------------|
+| Monday    | Graduationnnn      |
+| Tuesday   | Individual Project |
+| Wednesday | Individual Project | 
+| Thursday  | Individual Project |
+| Friday    | Individual Project | 
+
+
+## Week 6
+| Day       | Content Covered     |                                               
+|-----------|---------------------|
+| Monday    | Individual Project  |
+| Tuesday   | Individual Project  |
+| Wednesday | Individual Project  | 
+| Thursday  |                     |
+| Friday    |                     | 
+
+
