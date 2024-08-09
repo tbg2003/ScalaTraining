@@ -86,7 +86,8 @@ def power(exponent:Int):Int => Int = {
  base => Math.pow(base, exponent).toInt
 }
 
-def squareX(x:Int):Int = power(2)(x)
+
+def squareX(base:Int):Int = power(2)(base)
 println(square(6))
 
 
