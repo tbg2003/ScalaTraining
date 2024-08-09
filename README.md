@@ -7,6 +7,8 @@
 - [Week 2](#Week-2)
 - [Week 3](#Week-3)
 - [Week 4](#Week-4)
+- [Week 5](#Week-5)
+- [Week 5](#Week-6)
 
 ## Week 1
 | Day       | Content Covered                                             |                                               
@@ -41,7 +43,28 @@
 | Day       | Content Covered |                                               
 |-----------|-----------------|
 | Monday    | Recursion       |
-| Tuesday   |                 |
-| Wednesday |                 | 
-| Thursday  |                 |
-| Friday    |                 | 
+| Tuesday   | Group Project   |
+| Wednesday | Group Project   | 
+| Thursday  | Group Project   |
+| Friday    | Group Project   | 
+
+## Week 5
+| Day       | Content Covered    |                                               
+|-----------|--------------------|
+| Monday    | Graduationnnn      |
+| Tuesday   | Individual Project |
+| Wednesday | Individual Project | 
+| Thursday  | Individual Project |
+| Friday    | Individual Project | 
+
+
+## Week 6
+| Day       | Content Covered        |                                               
+|-----------|------------------------|
+| Monday    | Individual Project     |
+| Tuesday   | Individual Project     |
+| Wednesday | Individual Project     | 
+| Thursday  | Higher Order Functions |
+| Friday    |                        | 
+
+
