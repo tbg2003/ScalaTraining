@@ -68,3 +68,33 @@
 | Friday    |                        | 
 
 
+## Week 7
+| Day       | Content Covered        |                                               
+|-----------|------------------------|
+| Monday    | Individual Project     |
+| Tuesday   | Individual Project     |
+| Wednesday | Individual Project Demo    | 
+| Thursday  | Higher Order Functions |
+| Friday    | Group Project          | 
+
+
+## Week 8
+| Day       | Content Covered        |                                               
+|-----------|------------------------|
+| Monday    | Group Project          | 
+| Tuesday   | Group Project          | 
+| Wednesday | Group Project          |  
+| Thursday  | Group Project          | 
+| Friday    | Group Project Demo         | 
+
+
+## Week 9
+| Day       | Content Covered        |                                               
+|-----------|------------------------|
+| Monday    | Bank Holiday         | 
+| Tuesday   | Office Social     |
+| Wednesday | Wire Mocking     | 
+| Thursday  | Covariance, Contravariance, Invariance |
+| Friday    |                        | 
+
+
