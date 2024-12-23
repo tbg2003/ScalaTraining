@@ -35,7 +35,7 @@ object AfternoonTask extends App {
   }
 
   case class AnimalFeeder() extends Feeder[Animal]{
-    override def feedAnimal(animal: Animal): String = println(s"feeding ${animal.name} some ${animal.food}")
+    override def feedAnimal(animal: Animal): String = s"feeding ${animal.name} some ${animal.food}"
   }
   case class DogFeeder() extends Feeder[Dog]
 
@@ -57,7 +57,7 @@ object AfternoonTask extends App {
   val dogs: NonEmptyPack[Dog] = EmptyPack.addToPack(Dog("dog", "food"))
   val cats: NonEmptyPack[Cat] = EmptyPack.addToPack(Cat("cat", "food"))
   val animals: NonEmptyPack[Animal] = dogs
-  val moreAnimals: NonEmptyPack[Animal] = animals.addToPack(cats)
+//  val moreAnimals: NonEmptyPack[Animal] = animals.addToPack(cats)
 
 
   abstract class Vet[-A]{

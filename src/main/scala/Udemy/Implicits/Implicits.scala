@@ -1,5 +1,5 @@
 package Udemy.Implicits
 
-object Implicits {
+object Implicits extends App{
 
 }
